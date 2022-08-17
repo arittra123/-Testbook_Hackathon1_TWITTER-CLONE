@@ -1,0 +1,232 @@
+:root {
+  --twitter-color: rgb(29, 155, 240);
+  --twitter-logo-hover: rgb(225, 243, 255);
+  --hover-color: rgb(234, 234, 234);
+}
+
+.midContainer {
+  height: 30px;
+}
+
+.rightContainer {
+  height: 30px;
+}
+
+nav {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.twitterLogo {
+  /* border: 1px solid black; */
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  width: max-content;
+}
+
+.twitterLogo:hover {
+  background-color: var(--twitter-logo-hover);
+}
+
+.twitterLogo svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.navItems {
+  /* border: 1px solid black; */
+  border-radius: 50%;
+  padding: 12px;
+  cursor: pointer;
+  width: max-content;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navHomeLogo::after {
+  content: "Home";
+  background-color: black;
+  color: #ffffff;
+  font-size: 12px;
+  opacity: 0.7;
+  border-radius: 2px;
+  padding: 0px 4px;
+  position: absolute;
+  bottom: -20px;
+  display: none;
+  z-index: 99;
+}
+
+.navHomeLogo:hover.navHomeLogo::after {
+  display: block;
+}
+
+.navExploreLogo::after {
+  content: "Explore";
+  background-color: black;
+  color: #ffffff;
+  font-size: 12px;
+  opacity: 0.7;
+  border-radius: 2px;
+  padding: 0px 4px;
+  position: absolute;
+  bottom: -20px;
+  display: none;
+  z-index: 99;
+}
+
+.navExploreLogo:hover.navExploreLogo::after {
+  display: block;
+}
+
+.navNotificationsLogo::after {
+  content: "Notifications";
+  background-color: black;
+  color: #ffffff;
+  font-size: 12px;
+  opacity: 0.7;
+  border-radius: 2px;
+  padding: 0px 4px;
+  position: absolute;
+  bottom: -20px;
+  display: none;
+  z-index: 99;
+}
+
+.navNotificationsLogo:hover.navNotificationsLogo::after {
+  display: block;
+}
+
+.navMessagesLogo::after {
+  content: "Messages";
+  background-color: black;
+  color: #ffffff;
+  font-size: 12px;
+  opacity: 0.7;
+  border-radius: 2px;
+  padding: 0px 4px;
+  position: absolute;
+  bottom: -20px;
+  display: none;
+  z-index: 99;
+}
+
+.navMessagesLogo:hover.navMessagesLogo::after {
+  display: block;
+}
+
+.navProfileLogo::after {
+  content: "Profile";
+  background-color: black;
+  color: #ffffff;
+  font-size: 12px;
+  opacity: 0.7;
+  border-radius: 2px;
+  padding: 0px 4px;
+  position: absolute;
+  bottom: -20px;
+  display: none;
+  z-index: 99;
+}
+
+.navProfileLogo:hover.navProfileLogo::after {
+  display: block;
+}
+
+.navMoreLogo::after {
+  content: "More";
+  background-color: black;
+  color: #ffffff;
+  font-size: 12px;
+  opacity: 0.7;
+  border-radius: 2px;
+  padding: 0px 4px;
+  position: absolute;
+  bottom: -20px;
+  display: none;
+  z-index: 99;
+}
+
+.navMoreLogo:hover.navMoreLogo::after {
+  display: block;
+}
+
+.navNewTweet::after {
+  content: "Tweet";
+  color: #ffffff;
+  background-color: black;
+  border-radius: 2px;
+  padding: 0pc 4px;
+  font-size: 12px;
+  opacity: 0.7;
+  position: absolute;
+  bottom: -20px;
+  display: none;
+}
+
+.navNewTweet:hover.navNewTweet::after {
+  display: block;
+}
+
+.navItems:hover {
+  background-color: var(--hover-color);
+}
+
+.navItems svg {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.navNewTweet svg {
+  width: 1.75rem;
+  height: 1.75rem;
+  fill: #ffffff;
+}
+
+.navNewTweet {
+  background-color: var(--twitter-color);
+  border-radius: 50%;
+  padding: 12px;
+  cursor: pointer;
+  margin-top: 12px;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.profileImgContainer {
+  border-radius: 50%;
+  padding: 12px;
+  cursor: pointer;
+  margin-top: 12px;
+  width: max-content;
+}
+
+.profileImgContainer:hover {
+  background-color: var(--hover-color);
+}
+
+.profileImg {
+  background-image: url("./Images/profilePic.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
