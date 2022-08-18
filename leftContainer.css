@@ -4,14 +4,6 @@
   --hover-color: rgb(234, 234, 234);
 }
 
-.midContainer {
-  height: 30px;
-}
-
-.rightContainer {
-  height: 30px;
-}
-
 nav {
   height: 100vh;
   display: flex;

@@ -1,0 +1,185 @@
+:root {
+  --twitter-color: rgb(29, 155, 240);
+  --twitter-logo-hover: rgb(225, 243, 255);
+  --hover-color: rgb(234, 234, 234);
+  --ligtHeading: rgb(82, 96, 130);
+}
+
+.rightContainer {
+  height: 100vh;
+  overflow: auto;
+}
+
+.rightContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.searchBoxContainer {
+  position: sticky;
+  top: 0px;
+  background-color: #ffffff;
+}
+
+.searchBox {
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(240, 241, 243);
+}
+
+.searchBox:hover {
+  background-color: #ffffff;
+  outline: 1px solid var(--twitter-color);
+}
+
+.searchBox:hover.searchBox input {
+  background-color: #ffffff;
+}
+
+.searchBox i {
+  color: rgb(46, 57, 83);
+}
+
+.searchBox input {
+  width: 100%;
+  margin-left: 14px;
+  border: none;
+  outline: none;
+  background-color: rgb(240, 241, 243);
+}
+
+.searchBox input::placeholder {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(82, 96, 130);
+}
+
+.whatsHappeningContainer {
+  border-radius: 14px;
+  background-color: rgb(246, 247, 248);
+}
+
+.whatshappeningHeading {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.whatsHappeningSuggestionsOne {
+  width: 100%;
+  display: flex;
+  column-gap: 16px;
+  cursor: pointer;
+}
+
+.whatsHappeningSuggestionsOne:hover {
+  background-color: var(--hover-color);
+}
+
+.whatsHappeningSuggestionsOneTextHead {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--ligtHeading);
+}
+
+.whatsHappeningSuggestionsOneTextContent {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.whatsHappeningSuggestionsOneImg {
+  min-width: 70px;
+  max-width: 70px;
+  max-height: 70px;
+  min-height: 70px;
+  border-radius: 14px;
+}
+
+.whatsHappeningSuggestionsOneImg img {
+  border-radius: 14px;
+}
+
+.showMoreContainer {
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--twitter-color);
+  cursor: pointer;
+}
+
+.showMoreContainer:hover {
+  background-color: var(--hover-color);
+}
+
+.profileToFollowProfileImg {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-image: url("./Images/neheru_to_follow.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.profileToFollowProfileNameText {
+  display: flex;
+  align-items: center;
+}
+
+.profileToFollowProfileNameText svg {
+  width: 18px;
+  fill: var(--twitter-color);
+  margin-left: 2px;
+}
+
+.profileToFollowContainerOne {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 12px 0px;
+}
+
+.profileToFollowContainerOne:hover {
+  background-color: var(--hover-color);
+}
+
+.profileToFollowProfileImgProfileName {
+  display: flex;
+}
+
+.profileToFollowProfileName {
+  margin-left: 12px;
+}
+
+.profileToFollowFollowButton {
+  background-color: black;
+  color: #ffffff;
+  font-weight: 500;
+  border-radius: 16px;
+  font-size: 14px;
+}
+
+.profileToFollowProfileNameText {
+  font-weight: 700;
+}
+
+.profileToFollowProfileNameTwitter {
+  color: var(--ligtHeading);
+}
+
+.profileToFollowContainerTwo .profileToFollowProfileImg {
+  background-image: url("./Images/narendramodi_to_follow.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.profileToFollowContainerThree .profileToFollowProfileImg {
+  background-image: url("./Images/svf_to_follow.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

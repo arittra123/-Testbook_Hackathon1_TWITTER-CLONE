@@ -1,0 +1,9 @@
+:root {
+  --twitter-color: rgb(29, 155, 240);
+  --twitter-logo-hover: rgb(225, 243, 255);
+  --hover-color: rgb(234, 234, 234);
+}
+
+.midContainer {
+  height: 100vh;
+}
