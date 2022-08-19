@@ -2,20 +2,21 @@
   --twitter-color: rgb(29, 155, 240);
   --twitter-logo-hover: rgb(225, 243, 255);
   --hover-color: rgb(234, 234, 234);
+  --ligtHeading: rgb(82, 96, 130);
 }
 
 nav {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
 }
 
 .navItem {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .twitterLogo {
@@ -35,150 +36,11 @@ nav {
   height: 2rem;
 }
 
-.navItems {
-  /* border: 1px solid black; */
-  border-radius: 50%;
-  padding: 12px;
-  cursor: pointer;
-  width: max-content;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.navHomeLogo::after {
-  content: "Home";
-  background-color: black;
-  color: #ffffff;
-  font-size: 12px;
-  opacity: 0.7;
-  border-radius: 2px;
-  padding: 0px 4px;
-  position: absolute;
-  bottom: -20px;
-  display: none;
-  z-index: 99;
-}
-
-.navHomeLogo:hover.navHomeLogo::after {
-  display: block;
-}
-
-.navExploreLogo::after {
-  content: "Explore";
-  background-color: black;
-  color: #ffffff;
-  font-size: 12px;
-  opacity: 0.7;
-  border-radius: 2px;
-  padding: 0px 4px;
-  position: absolute;
-  bottom: -20px;
-  display: none;
-  z-index: 99;
-}
-
-.navExploreLogo:hover.navExploreLogo::after {
-  display: block;
-}
-
-.navNotificationsLogo::after {
-  content: "Notifications";
-  background-color: black;
-  color: #ffffff;
-  font-size: 12px;
-  opacity: 0.7;
-  border-radius: 2px;
-  padding: 0px 4px;
-  position: absolute;
-  bottom: -20px;
-  display: none;
-  z-index: 99;
-}
-
-.navNotificationsLogo:hover.navNotificationsLogo::after {
-  display: block;
-}
-
-.navMessagesLogo::after {
-  content: "Messages";
-  background-color: black;
-  color: #ffffff;
-  font-size: 12px;
-  opacity: 0.7;
-  border-radius: 2px;
-  padding: 0px 4px;
-  position: absolute;
-  bottom: -20px;
-  display: none;
-  z-index: 99;
-}
-
-.navMessagesLogo:hover.navMessagesLogo::after {
-  display: block;
-}
-
-.navProfileLogo::after {
-  content: "Profile";
-  background-color: black;
-  color: #ffffff;
-  font-size: 12px;
-  opacity: 0.7;
-  border-radius: 2px;
-  padding: 0px 4px;
-  position: absolute;
-  bottom: -20px;
-  display: none;
-  z-index: 99;
-}
-
-.navProfileLogo:hover.navProfileLogo::after {
-  display: block;
-}
-
-.navMoreLogo::after {
-  content: "More";
-  background-color: black;
-  color: #ffffff;
-  font-size: 12px;
-  opacity: 0.7;
-  border-radius: 2px;
-  padding: 0px 4px;
-  position: absolute;
-  bottom: -20px;
-  display: none;
-  z-index: 99;
-}
-
-.navMoreLogo:hover.navMoreLogo::after {
-  display: block;
-}
-
-.navNewTweet::after {
-  content: "Tweet";
-  color: #ffffff;
-  background-color: black;
-  border-radius: 2px;
-  padding: 0pc 4px;
-  font-size: 12px;
-  opacity: 0.7;
-  position: absolute;
-  bottom: -20px;
-  display: none;
-}
-
-.navNewTweet:hover.navNewTweet::after {
-  display: block;
-}
-
-.navItems:hover {
-  background-color: var(--hover-color);
-}
-
 .navItems svg {
   width: 1.75rem;
   height: 1.75rem;
+  margin-right: 12px;
+  transition: all 0.2s ease-in;
 }
 
 .navNewTweet svg {
@@ -221,4 +83,40 @@ nav {
   height: 2.5rem;
   border-radius: 50%;
   background-color: #ffffff;
+}
+
+.navItems {
+  width: 100%;
+}
+
+.navItems a {
+  /* border: 1px solid black; */
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  color: black;
+  font-weight: 500;
+  transition: all 0.2s ease-in;
+}
+
+.navItems a:hover svg {
+  fill: var(--twitter-color);
+}
+
+.navItems a:hover {
+  color: var(--twitter-color);
+}
+
+.navHomeLogo a {
+  color: var(--twitter-color);
+}
+
+.navItems a i {
+  font-size: 24px;
+  margin-right: 12px;
+}
+
+.navItems a i {
+  -webkit-text-stroke: 0.5px;
 }
