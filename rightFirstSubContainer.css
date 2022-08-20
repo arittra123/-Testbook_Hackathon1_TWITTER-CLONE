@@ -8,11 +8,13 @@
 .rightFirstSubContainer {
   width: 60%;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .rightFirstSubContainerScrollItems {
   overflow: auto;
-  height: 100vh;
+  height: 100%;
 }
 
 .rightFirstSubContainerScrollItems::-webkit-scrollbar {
