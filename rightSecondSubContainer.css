@@ -5,12 +5,12 @@
   --ligtHeading: rgb(82, 96, 130);
 }
 
-.rightContainer {
-  height: 100vh;
+.rightSecondSubContainer {
   overflow: auto;
+  width: 40%;
 }
 
-.rightContainer::-webkit-scrollbar {
+.rightSecondSubContainer::-webkit-scrollbar {
   display: none;
 }
 
@@ -114,8 +114,10 @@
 }
 
 .profileToFollowProfileImg {
-  width: 50px;
-  height: 50px;
+  min-width: 50px;
+  max-width: 50px;
+  min-height: 50px;
+  max-height: 50px;
   border-radius: 50px;
   background-image: url("./Images/neheru_to_follow.jpg");
   background-position: center;
@@ -206,6 +208,10 @@
 .profileToFollowProfileNameTwitter span {
   color: var(--twitter-color);
   font-weight: 500;
+}
+
+.profileToFollowProfileNameTwitter span:hover {
+  text-decoration: underline;
 }
 
 .whatsHappeningSuggestionAsProjectContainer .profileToFollowContainerOne:hover {
