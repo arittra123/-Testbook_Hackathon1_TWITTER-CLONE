@@ -54,7 +54,7 @@
   position: relative;
 }
 
-.topTweetsLogo::after {
+.topTweetsLogo:hover.topTweetsLogo::after {
   content: "Top Tweets";
   width: max-content;
   position: absolute;
@@ -66,10 +66,6 @@
   background-color: black;
   opacity: 0.7;
   color: #ffffff;
-  display: none;
-}
-
-.topTweetsLogo:hover.topTweetsLogo::after {
   display: block;
 }
 
@@ -127,7 +123,103 @@
 }
 
 .homePageWriteTweetOption:hover {
-  background-color: rgb(225, 242, 255);
+  background-color: var(--twitter-logo-hover);
+}
+
+.mediaTitle,
+.gifTitle,
+.pollTitle,
+.emojiTitle,
+.scheduleTitle,
+.locationTitle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mediaTitle:hover .homePageWriteTweetOption::after {
+  content: "Media";
+  width: max-content;
+  position: absolute;
+  bottom: -22px;
+  padding: 0px 4px;
+  border-radius: 2px;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: black;
+  opacity: 0.7;
+  color: #ffffff;
+}
+
+.gifTitle:hover .homePageWriteTweetOption::after {
+  content: "GIF";
+  width: max-content;
+  position: absolute;
+  bottom: -22px;
+  padding: 0px 4px;
+  border-radius: 2px;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: black;
+  opacity: 0.7;
+  color: #ffffff;
+}
+
+.pollTitle:hover .homePageWriteTweetOption::after {
+  content: "Poll";
+  width: max-content;
+  position: absolute;
+  bottom: -22px;
+  padding: 0px 4px;
+  border-radius: 2px;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: black;
+  opacity: 0.7;
+  color: #ffffff;
+}
+
+.emojiTitle:hover .homePageWriteTweetOption::after {
+  content: "Emoji";
+  width: max-content;
+  position: absolute;
+  bottom: -22px;
+  padding: 0px 4px;
+  border-radius: 2px;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: black;
+  opacity: 0.7;
+  color: #ffffff;
+}
+
+.scheduleTitle:hover .homePageWriteTweetOption::after {
+  content: "Schedule";
+  width: max-content;
+  position: absolute;
+  bottom: -22px;
+  padding: 0px 4px;
+  border-radius: 2px;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: black;
+  opacity: 0.7;
+  color: #ffffff;
+}
+
+.locationTitle:hover .homePageWriteTweetOption::after {
+  content: "Location";
+  width: max-content;
+  position: absolute;
+  bottom: -22px;
+  padding: 0px 4px;
+  border-radius: 2px;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: black;
+  opacity: 0.7;
+  color: #ffffff;
 }
 
 .homePageWriteTweetOption svg {
@@ -190,4 +282,135 @@
 .tweetContentProfileName svg {
   width: 1.2rem;
   fill: var(--twitter-color);
+}
+
+.tweetContentProfileWrittenText span {
+  color: var(--twitter-color);
+}
+
+.tweetReplyRetweetLikeShare {
+  display: flex;
+  align-items: center;
+}
+
+.tweetReplyOptionContainer,
+.tweetRetweetOptionContainer,
+.tweetLikeOptionContainer,
+.tweetShareOptionContainer {
+  display: flex;
+  width: 25%;
+  align-items: center;
+  color: var(--ligtHeading);
+  font-size: 14px;
+  /* border: 1px solid black; */
+}
+
+.tweetReplyRetweetLikeShareIcons {
+  border-radius: 50%;
+  min-width: 30px;
+  min-height: 30px;
+  margin-right: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid black; */
+}
+
+.tweetReplyRetweetLikeShareIcons i {
+  font-size: 16px;
+  -webkit-text-stroke: 0.1px;
+}
+
+.hoverBlue:hover {
+  color: var(--twitter-color);
+}
+
+.hoverBgLightBlue:hover .tweetReplyRetweetLikeShareIcons {
+  background-color: rgb(212, 228, 236);
+}
+
+.hoverRed:hover {
+  color: crimson;
+}
+
+.hoverGreen:hover {
+  color: limegreen;
+}
+
+.hoverBgGreen:hover .tweetReplyRetweetLikeShareIcons {
+  background-color: rgb(210, 235, 210);
+}
+
+.hoverBgRed:hover .tweetReplyRetweetLikeShareIcons {
+  background-color: rgb(234, 212, 216);
+}
+
+.tweetReplyOption,
+.tweetRetweetOption,
+.tweetLikeOption,
+.tweetShareOption {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tweetReplyOption:hover .tweetReplyRetweetLikeShareIcons::after {
+  content: "Reply";
+  width: max-content;
+  position: absolute;
+  bottom: -22px;
+  padding: 0px 4px;
+  border-radius: 2px;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: black;
+  opacity: 0.7;
+  color: #ffffff;
+  display: block;
+}
+
+.tweetRetweetOption:hover .tweetReplyRetweetLikeShareIcons::after {
+  content: "Retweet";
+  width: max-content;
+  position: absolute;
+  bottom: -22px;
+  padding: 0px 4px;
+  border-radius: 2px;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: black;
+  opacity: 0.7;
+  color: #ffffff;
+  display: block;
+}
+
+.tweetLikeOption:hover .tweetReplyRetweetLikeShareIcons::after {
+  content: "Like";
+  width: max-content;
+  position: absolute;
+  bottom: -22px;
+  padding: 0px 4px;
+  border-radius: 2px;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: black;
+  opacity: 0.7;
+  color: #ffffff;
+  display: block;
+}
+
+.tweetShareOption:hover .tweetReplyRetweetLikeShareIcons::after {
+  content: "Share";
+  width: max-content;
+  position: absolute;
+  bottom: -22px;
+  padding: 0px 4px;
+  border-radius: 2px;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: black;
+  opacity: 0.7;
+  color: #ffffff;
+  display: block;
 }

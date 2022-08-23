@@ -1,0 +1,9 @@
+{
+  "editor.fontSize": 18,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": null,
+  "editor.fontWeight": "normal",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
